@@ -1,0 +1,491 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    color: #444;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff902a;
+  text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ff902a;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+  background-color: #ff902a;
+}
+
+/* Toggler */
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-toggler-icon {
+    display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #020202;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(135deg, #ff902a, #ffb703);
+  color: white;
+  text-align: center;
+  padding: 100px 20px 120px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #fdfdfd;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #ff902a;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: #ffe8b5;
+  color: #ff7400;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured Menu*/
+.featured-menu {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.featured-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f3ea;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+.rate {
+    background-color: #ffb703;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 15px;
+}
+
+.add-cart {
+    width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-cart:hover {
+    background-color: #c0392b;
+}
+
+.add-cart i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Menu Table Section */
+.menu-table {
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.menu-table h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+table thead {
+    background-color: #f9f3ea;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    color: #d35400;
+    font-size: 1.2rem;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #f6eada;
+}
+
+.card-body p:first-of-type {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Tabel Menu */
+.menu-table table th, .menu-table table td {
+    text-align: left;
+    padding: 10px 15px;
+}
+
+.menu-table table td:nth-child(2) {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+.menuz {
+  width: 100%;
+  height: 50px;
+  background: #f9f3ea;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f9f3ea;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.form-menu-section {
+    background-color: #f9f3ea;
+    padding: 50px 20px;
+  text-align: center;
+}
+
+.form-menu-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-menu-container h2 {
+    font-size: 2rem;
+    color: #ffb703;
+  margin-bottom: 10px;
+}
+
+.form-menu-container p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #ffb703;
+  box-shadow: 0px 0px 4px rgba(255, 183, 3, 0.5);
+}
+
+.radio-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.radio-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  color: #444;
+}
+
+input[type="radio"] {
+  accent-color: #ffb703;
+}
+
+.btn-submit {
+  background-color: #ffb703;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e5a702;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 20px;
+        display: none;
+    }
+
+    .navbar-toggler:checked ~ .navbar-links {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        visibility: hidden; 
+        position: absolute;
+    }
+    .form-menu-container {
+      padding: 15px;
+    }
+  
+    .form-menu-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form-menu-container p {
+      font-size: 0.9rem;
+    }
+  
+    select,
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      font-size: 0.9rem;
+    }
+  
+    .btn-submit {
+      font-size: 0.9rem;
+    }
+    
+}
