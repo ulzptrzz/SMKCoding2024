@@ -1,15 +1,15 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fff;
-    color: #444;
-    scroll-behavior: smooth;
+  background-color: #fff;
+  color: #444;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -55,8 +55,8 @@ body {
 }
 
 .nav-link.active {
-    font-weight: bold;
-    color: #ff902a;
+  font-weight: bold;
+  color: #ff902a;
 }
 
 .nav-link:hover {
@@ -70,7 +70,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    display: none;
+  display: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: #020202;
@@ -142,152 +142,152 @@ body {
 
 /* Featured Menu*/
 .featured-menu {
-    text-align: center;
-    margin: 30px 0;
+  text-align: center;
+  margin: 30px 0;
 }
 
 .featured-menu h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #e67e22;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e67e22;
 }
 
 .cards-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-    background-color: #f9f3ea;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-    position: relative;
+  background-color: #f9f3ea;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  position: relative;
 }
 
 .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .card-body {
-    padding: 15px;
+  padding: 15px;
 }
 
 .card-body h5 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #27ae60;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #27ae60;
 }
 
 .rate {
-    background-color: #ffb703;
-    color: white;
-    padding: 5px 10px;
-    font-size: 14px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 15px;
+  background-color: #ffb703;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 15px;
 }
 
 .add-cart {
-    width: 40px;
-    height: 40px;
-    background-color: #e74c3c;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 40px;
+  height: 40px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .add-cart:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 .add-cart i {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Menu Table Section */
 .menu-table {
-    margin: 40px auto;
-    text-align: center;
+  margin: 40px auto;
+  text-align: center;
 }
 
 
 .menu-table h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #e67e22;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e67e22;
 }
 
 table {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 table thead {
-    background-color: #f9f3ea;
+  background-color: #f9f3ea;
 }
 
 table th, table td {
-    padding: 15px;
-    text-align: left;
-    border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
 }
 
 table th {
-    color: #d35400;
-    font-size: 1.2rem;
+  color: #d35400;
+  font-size: 1.2rem;
 }
 
 table td {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 table tr:nth-child(even) {
-    background-color: #f6eada;
+  background-color: #f6eada;
 }
 
 .card-body p:first-of-type {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 /* Tabel Menu */
 .menu-table table th, .menu-table table td {
-    text-align: left;
-    padding: 10px 15px;
+  text-align: left;
+  padding: 10px 15px;
 }
 
 .menu-table table td:nth-child(2) {
-    color: #666;
-    font-size: 0.9rem;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 
@@ -301,9 +301,9 @@ table tr:nth-child(even) {
 
 /* About Section */
 .about-section {
-    background-color: #f9f3ea;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #f9f3ea;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .about-container {
@@ -312,21 +312,21 @@ table tr:nth-child(even) {
 }
 
 .about-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .about-description {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 .form-menu-section {
-    background-color: #f9f3ea;
-    padding: 50px 20px;
+  background-color: #f9f3ea;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -340,33 +340,33 @@ table tr:nth-child(even) {
 }
 
 .form-menu-container h2 {
-    font-size: 2rem;
-    color: #ffb703;
+  font-size: 2rem;
+  color: #ffb703;
   margin-bottom: 10px;
 }
 
 .form-menu-container p {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
 }
 
 /* Form */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .form-group {
-    text-align: left;
+  text-align: left;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
 }
 
 select,
@@ -426,66 +426,67 @@ input[type="radio"] {
 
 /* Responsive */
 @media (max-width: 767px) {
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    table th, table td {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
 
-    .navbar-toggler {
-        display: block;
-    }
+  .navbar-toggler {
+    display: block;
+  }
 
-    .navbar-toggler-icon {
-        display: block;
-    }
+  .navbar-toggler-icon {
+    display: block;
+  }
 
-    .navbar-links {
-        flex-direction: column;
-        gap: 10px;
-        background-color: #f8f9fa;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        padding: 15px 20px;
-        display: none;
-    }
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    display: none;
+  }
 
-    .navbar-toggler:checked ~ .navbar-links {
-        display: flex;
-    }
+  .navbar-toggler:checked ~ .navbar-links {
+    display: flex;
+  }
 
-    .navbar-toggler {
-        visibility: hidden; 
-        position: absolute;
-    }
-    .form-menu-container {
-      padding: 15px;
-    }
+  .navbar-toggler {
+    visibility: hidden; 
+    position: absolute;
+  }
+
+  .form-menu-container {
+    padding: 15px;
+  }
   
-    .form-menu-container h2 {
-      font-size: 1.8rem;
-    }
+  .form-menu-container h2 {
+    font-size: 1.8rem;
+  }
   
-    .form-menu-container p {
-      font-size: 0.9rem;
-    }
+  .form-menu-container p {
+    font-size: 0.9rem;
+  }
   
-    select,
-    textarea,
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
-      font-size: 0.9rem;
-    }
+  select,
+  textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 0.9rem;
+  }
   
-    .btn-submit {
-      font-size: 0.9rem;
-    }
+  .btn-submit {
+    font-size: 0.9rem;
+  }
     
 }
